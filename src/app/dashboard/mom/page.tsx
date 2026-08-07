@@ -9,11 +9,11 @@ export default function DashboardMom() {
           <div className="sidebar-nav">
             <Link href="/dashboard/mom" className="active"><span className="icon">🏠</span> Tableau de bord</Link>
             <Link href="/search"><span className="icon">🔍</span> Réserver un service</Link>
-            <Link href="#"><span className="icon">📅</span> Réservations à venir</Link>
-            <Link href="#"><span className="icon">✅</span> Réservations terminées</Link>
-            <Link href="#"><span className="icon">❤️</span> Professionnelles favorites</Link>
+            <Link href="/dashboard/mom/upcoming"><span className="icon">📅</span> Réservations à venir</Link>
+            <Link href="/dashboard/mom/completed"><span className="icon">✅</span> Réservations terminées</Link>
+            <Link href="/dashboard/mom/favorites"><span className="icon">❤️</span> Professionnelles favorites</Link>
             <Link href="/chat"><span className="icon">💬</span> Messages</Link>
-            <Link href="#"><span className="icon">❓</span> Centre d&apos;aide</Link>
+            <Link href="/faq"><span className="icon">❓</span> Centre d&apos;aide</Link>
             <Link href="/" style={{ marginTop: 'auto', color: '#c0392b' }}><span className="icon">🚪</span> Se déconnecter</Link>
           </div>
         </div>
