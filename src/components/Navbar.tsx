@@ -13,8 +13,9 @@ export default function Navbar({ type = 'default', backLink = '/', backText = 'â
   return (
     <nav>
       <div className="nav-logo">
-        <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Image src="/logo.jpg" alt="Oumouma Logo" width={150} height={50} style={{ objectFit: 'contain' }} />
+        <Link href="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <Image src="/logo.jpg" alt="Oumouma Logo" width={65} height={65} style={{ objectFit: 'contain' }} />
+          <span>Oumouma</span>
         </Link>
       </div>
 

@@ -6,9 +6,7 @@ export default function DashboardMom() {
     <div className="screen active">
       <div className="dashboard">
         <div className="sidebar">
-          <div className="sidebar-logo">
-            <Image src="/logo.jpg" alt="Oumouma Logo" width={150} height={50} style={{ objectFit: 'contain' }} />
-          </div>
+          <div className="sidebar-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><Image src="/logo.jpg" alt="Oumouma Logo" width={65} height={65} style={{ objectFit: 'contain' }} /><span>Oumouma</span></div>
           <div className="sidebar-nav">
             <Link href="/dashboard/mom" className="active"><span className="icon">🏠</span> Tableau de bord</Link>
             <Link href="/search"><span className="icon">🔍</span> Réserver un service</Link>
@@ -75,3 +73,4 @@ export default function DashboardMom() {
     </div>
   );
 }
+

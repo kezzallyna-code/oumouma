@@ -6,9 +6,7 @@ export default function Footer() {
     <footer>
       <div className="footer-grid">
         <div className="footer-brand">
-          <div className="logo">
-            <Image src="/logo.jpg" alt="Oumouma Logo" width={150} height={50} style={{ objectFit: 'contain' }} />
-          </div>
+          <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--rose)' }}><Image src="/logo.jpg" alt="Oumouma Logo" width={65} height={65} style={{ objectFit: 'contain' }} /><span>Oumouma</span></div>
           <p>La plateforme algérienne qui accompagne les mamans avec douceur, confiance et bienveillance.</p>
         </div>
         <div className="footer-col">
@@ -35,3 +33,4 @@ export default function Footer() {
     </footer>
   );
 }
+
