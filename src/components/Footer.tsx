@@ -1,14 +1,11 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer>
       <div className="footer-grid">
         <div className="footer-brand">
-          <div className="logo">
-            <Image src="/logo.jpg" alt="Oumouma Logo" width={150} height={50} style={{ objectFit: 'contain' }} />
-          </div>
+          <div className="logo">Oumouma</div>
           <p>La plateforme algérienne qui accompagne les mamans avec douceur, confiance et bienveillance.</p>
         </div>
         <div className="footer-col">

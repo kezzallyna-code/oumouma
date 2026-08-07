@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 interface NavbarProps {
   type?: 'default' | 'back' | 'search' | 'none';
@@ -13,9 +12,7 @@ export default function Navbar({ type = 'default', backLink = '/', backText = 'â
   return (
     <nav>
       <div className="nav-logo">
-        <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Image src="/logo.jpg" alt="Oumouma Logo" width={150} height={50} style={{ objectFit: 'contain' }} />
-        </Link>
+        <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>Oumouma</Link>
       </div>
 
       {type === 'default' && (

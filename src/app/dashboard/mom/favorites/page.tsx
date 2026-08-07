@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function FavoriteProfessionals() {
   return (
     <div className="screen active">
       <div className="dashboard">
         <div className="sidebar">
-          <div className="sidebar-logo"><Image src="/logo.jpg" alt="Oumouma Logo" width={150} height={50} style={{ objectFit: 'contain' }} /></div>
+          <div className="sidebar-logo">Oumouma</div>
           <div className="sidebar-nav">
             <Link href="/dashboard/mom"><span className="icon">🏠</span> Tableau de bord</Link>
             <Link href="/search"><span className="icon">🔍</span> Réserver un service</Link>
