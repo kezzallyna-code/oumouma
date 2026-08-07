@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function DashboardPro() {
   return (
     <div className="screen active">
       <div className="dashboard">
         <div className="sidebar">
-          <div className="sidebar-logo">Oumouma Pro</div>
+          <div className="sidebar-logo"><Image src="/logo.jpg" alt="Oumouma Logo" width={150} height={50} style={{ objectFit: 'contain' }} /></div>
           <div className="sidebar-nav">
             <Link href="/dashboard/pro" className="active"><span className="icon">🏠</span> Tableau de bord</Link>
             <Link href="#"><span className="icon">🔔</span> Nouvelles demandes <span style={{ background: 'var(--accent)', color: 'white', fontSize: '.65rem', padding: '2px 6px', borderRadius: '50px', marginLeft: 'auto' }}>3</span></Link>
